@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <link rel="icon" type="image/png" href="./logos/jcacmLogo400.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js" type="module"></script>
+    <script src="script.js" defer></script>
+    <title>Tic Tac Toe Game</title>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Tic Tac Toe</h1>
+        <div class="cell-container">
+            <div class="cell" cellIndex="0"></div>
+            <div class="cell" cellIndex="1"></div>
+            <div class="cell" cellIndex="2"></div>
+            <div class="cell" cellIndex="3"></div>
+            <div class="cell" cellIndex="4"></div>
+            <div class="cell" cellIndex="5"></div>
+            <div class="cell" cellIndex="6"></div>
+            <div class="cell" cellIndex="7"></div>
+            <div class="cell" cellIndex="8"></div>
+        </div>
+        <!-- keep track of who's turn it is -->
+        <h2 id="status-text">X's v O's</h2>
+        <!-- button to restart game at any point -->
+        <button id="restart-btn">Restart</button>
+        <!-- button to check modal before using JavaScript to open it -->
+        <!-- <button id="modal-btn" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#winner-modal">TESTING</button> -->
+
+    </div>
+    <div class="modal fade" id="winner-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-secondary">
+                    <button class="btn-close bg-light" type="button" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body text-secondary text-center">
+                    <h2 id="modal-h2">You Win!</h2>
+                </div>
+                <div class="modal-footer bg-secondary">
+                    <button class="btn btn-light" id="play-again-btn">
+                        Play Again!
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js" type="module"></script> -->
+
+</body>
+</html>
